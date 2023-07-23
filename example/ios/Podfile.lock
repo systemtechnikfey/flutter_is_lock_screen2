@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - is_lock_screen2 (2.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - is_lock_screen2 (from `.symlinks/plugins/is_lock_screen2/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  is_lock_screen2:
+    :path: ".symlinks/plugins/is_lock_screen2/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  is_lock_screen2: 2bc16ada7d49434ba1a2b24f09aa49a87b154e79
+
+PODFILE CHECKSUM: cc1f88378b4bfcf93a6ce00d2c587857c6008d3b
+
+COCOAPODS: 1.12.0
