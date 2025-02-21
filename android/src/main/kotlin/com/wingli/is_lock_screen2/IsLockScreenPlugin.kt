@@ -13,7 +13,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
 /** IsLockScreenPlugin */
-public class IsLockScreenPlugin(val registrarContext: Context? = null) : FlutterPlugin, MethodCallHandler {
+public class IsLockScreenPlugin() : FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -30,7 +30,7 @@ public class IsLockScreenPlugin(val registrarContext: Context? = null) : Flutter
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     when (call.method) {
       "isLockScreen" -> {
-        val context = bindingContext ?: registrarContext
+        val context = bindingContext
         ?: return result.error("NullContext", "Cannot access system service as context is null", null)
 
         val keyguardManager: KeyguardManager = context.getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
